@@ -1,5 +1,5 @@
 function App() {
-  consonle.log("hello world");
+  console.log("hello world");
   return (
     <>
       <h1>Study Stacks</h1>
