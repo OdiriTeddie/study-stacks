@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
-    "pre:commit": "npm run lint && npm run test && npx lint-staged",
+    "pre:commit": "npm run lint && npx lint-staged && npm run test",
     "pre:push": "npm run build",
     "prepare": "husky install"
   },
