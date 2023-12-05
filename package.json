@@ -14,10 +14,8 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{ts, tsx}": [
-      "eslint",
-      "prettier --write"
-    ]
+    "src/**/*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "src/**/*.{js,jsx,ts,tsx,css,scss,md}": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "jest-environment-jsdom": "^29.7.0",
